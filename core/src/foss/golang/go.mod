@@ -4,11 +4,8 @@ go 1.20
 
 require cfa v0.0.0
 
-require cfa/blob v0.0.0-00010101000000-000000000000 // indirect
-
 require (
 	github.com/3andne/restls-client-go v0.1.6 // indirect
-	github.com/Kr328/tun2socket v0.0.0-20220414050025-d07c78d06d34 // indirect
 	github.com/RyuaNerin/go-krypto v1.2.4 // indirect
 	github.com/Yawning/aez v0.0.0-20211027044916-e49e68abd344 // indirect
 	github.com/ajg/form v1.5.1 // indirect
@@ -25,7 +22,6 @@ require (
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
 	github.com/go-chi/chi/v5 v5.1.0 // indirect
-	github.com/go-chi/cors v1.2.1 // indirect
 	github.com/go-chi/render v1.0.3 // indirect
 	github.com/go-ole/go-ole v1.3.0 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
@@ -46,21 +42,23 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mdlayher/netlink v1.7.2 // indirect
 	github.com/mdlayher/socket v0.4.1 // indirect
+	github.com/metacubex/amneziawg-go v0.0.0-20240922133038-fdf3a4d5a4ab // indirect
 	github.com/metacubex/bbolt v0.0.0-20240822011022-aed6d4850399 // indirect
 	github.com/metacubex/chacha v0.1.0 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20240320004321-933faba989ec // indirect
 	github.com/metacubex/mihomo v1.7.0 // indirect
-	github.com/metacubex/quic-go v0.46.1-0.20240807232329-1c6cb2d67f58 // indirect
+	github.com/metacubex/quic-go v0.47.1-0.20240909010619-6b38f24bfcc4 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/sing-quic v0.0.0-20240827003841-cd97758ed8b4 // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.8 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.2 // indirect
 	github.com/metacubex/sing-tun v0.2.7-0.20240729131039-ed03f557dee1 // indirect
 	github.com/metacubex/sing-vmess v0.1.9-0.20240719134745-1df6fb20bbf9 // indirect
-	github.com/metacubex/sing-wireguard v0.0.0-20240826061955-1e4e67afe5cd // indirect
+	github.com/metacubex/sing-wireguard v0.0.0-20240924052438-b0976fc59ea3 // indirect
 	github.com/metacubex/tfo-go v0.0.0-20240830120620-c5e019b67785 // indirect
 	github.com/metacubex/utls v1.6.6 // indirect
+	github.com/metacubex/wireguard-go v0.0.0-20240922131502-c182e7471181 // indirect
 	github.com/miekg/dns v1.1.62 // indirect
 	github.com/mroth/weightedrand/v2 v2.1.0 // indirect
 	github.com/oasisprotocol/deoxysii v0.0.0-20220228165953-2091330c22b7 // indirect
@@ -72,6 +70,7 @@ require (
 	github.com/puzpuzpuz/xsync/v3 v3.4.0 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
 	github.com/quic-go/qtls-go1-20 v0.4.1 // indirect
+	github.com/sagernet/cors v1.2.1 // indirect
 	github.com/sagernet/fswatch v0.1.1 // indirect
 	github.com/sagernet/netlink v0.0.0-20240612041022-b9a21c07ac6a // indirect
 	github.com/sagernet/nftables v0.3.0-beta.4 // indirect
@@ -79,7 +78,6 @@ require (
 	github.com/sagernet/sing-mux v0.2.1-0.20240124034317-9bfb33698bb6 // indirect
 	github.com/sagernet/sing-shadowtls v0.1.4 // indirect
 	github.com/sagernet/smux v0.0.0-20231208180855-7041f6ea79e7 // indirect
-	github.com/sagernet/wireguard-go v0.0.0-20231209092712-9a439356a62e // indirect
 	github.com/samber/lo v1.47.0 // indirect
 	github.com/shirou/gopsutil/v3 v3.24.5 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
@@ -91,19 +89,21 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/u-root/uio v0.0.0-20230220225925-ffce2a382923 // indirect
 	github.com/vishvananda/netns v0.0.4 // indirect
+	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
+	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	gitlab.com/go-extension/aes-ccm v0.0.0-20230221065045-e58665ef23c7 // indirect
 	gitlab.com/yawning/bsaes.git v0.0.0-20190805113838-0a714cd429ec // indirect
 	go.uber.org/mock v0.4.0 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
-	golang.org/x/crypto v0.26.0 // indirect
+	golang.org/x/crypto v0.27.0 // indirect
 	golang.org/x/exp v0.0.0-20240808152545-0cdaa3abc0fa // indirect
 	golang.org/x/mod v0.20.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
+	golang.org/x/net v0.29.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.24.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/text v0.18.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	golang.org/x/tools v0.24.0 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
@@ -116,5 +116,3 @@ replace github.com/sagernet/sing => github.com/metacubex/sing v0.0.0-20240724044
 replace cfa => ../../main/golang
 
 replace github.com/metacubex/mihomo => ./clash
-
-replace cfa/blob => ../../../build/intermediates/golang_blob

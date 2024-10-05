@@ -42,7 +42,13 @@ data class ConfigurationOverride(
     var ipv6: Boolean? = null,
 
     @SerialName("external-controller")
-    var externalController: String? = "127.0.0.1:0",
+    var externalController: String? = null,
+
+    @SerialName("external-controller-tls")
+    var externalControllerTLS: String? = null,
+
+    @SerialName("external-controller-cors")
+    var externalControllerCors: ExternalControllerCors = ExternalControllerCors(),
 
     @SerialName("secret")
     var secret: String? = null,
@@ -106,6 +112,9 @@ data class ConfigurationOverride(
         @SerialName("fake-ip-filter")
         var fakeIpFilter: List<String>? = null,
 
+        @SerialName("fake-ip-filter-mode")
+        var fakeIPFilterMode: FilterMode? = null,
+
         @SerialName("fallback-filter")
         val fallbackFilter: DnsFallbackFilter = DnsFallbackFilter(),
 
@@ -156,6 +165,14 @@ data class ConfigurationOverride(
         @SerialName("fake-ip")
         FakeIp,
     }
+    @Serializable
+    enum class FilterMode {
+        @SerialName("blacklist")
+        BlackList,
+
+        @SerialName("whitelist")
+        WhiteList,
+    }
 
     @Serializable
     data class Sniffer(
@@ -194,6 +211,15 @@ data class ConfigurationOverride(
 
         @SerialName("geosite")
         var geosite: String? = null,
+    )
+
+    @Serializable
+    data class ExternalControllerCors(
+        @SerialName("allow-origins")
+        var allowOrigins: List<String>? = null,
+
+        @SerialName("allow-private-network")
+        var allowPrivateNetwork: Boolean? = null,
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
